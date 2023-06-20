@@ -33,7 +33,7 @@ header >p{
     text-align: center;
 }
 
-p > a{
+header p > a{
     color: white;
     text-decoration: none;
 }
