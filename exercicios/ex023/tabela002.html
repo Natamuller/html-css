@@ -12,11 +12,29 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1em;
+            font-weight: bold;
+            background-color: cornflowerblue;
+            padding: 10px;
         }
 
         thead{
             background-color: cadetblue;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color:cadetblue ;
+        }
+
+        tbody > tr:nth-child(2n) {
+         background-color:lightgray;
         }
 
         td, th{
@@ -36,12 +54,13 @@
     </style>
 </head>
 <body>
-    
+    <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
          <thead>
             <tr>
-                <th>Estado</th>
-                <th>polulação</th>
+                <th scope="col">Estado</th>
+                <th scope="col">polulação</th>
             </tr>
          </thead>
 
@@ -71,14 +90,41 @@
                 <td>Rio Grande do Sul</td>
                 <td class="numero">11 377 239</td>
             </tr>
-         </tbody>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9 557 071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">9 132 078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">8 602 865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7 164 788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">7 075 181</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="numero">7 018 354</td>
+            </tr>
+            <tr>
+                <td>Amazonás</td>
+                <td class="numero">4 144 597</td>
+            </tr>
 
+</tbody>
          <tfoot>
             <tr>
-                <th>Total de Abitantes</th>
+                <th scope="row">Total de Abitantes</th>
                 <td class="numero">122 037 063</td>
-            </tr>
-         </tfoot>
+             </tfoot>
 
     </table>
 </body>
