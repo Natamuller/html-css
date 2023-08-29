@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de marcar</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#op{
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dados pessoais</h1>
+
+    <form action="cadastro.php" method="get">
+    <fieldset>
+        <legend>Sexo</legend>
+
+            <div>
+                <input type="radio" name="sexo" id="imas" value="M">
+                <label for="imas">Masculino</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="sexo" id="ifem" value="F">
+                <label for="ifem">Feminino</label >
+            </div>
+        </fieldset >
+
+        <fieldset>
+                        <legend>Esportes que gosta</legend>
+                    <div>
+                        <input type="checkbox" name="fut" id="ifut" checked>
+                        <label for="ifut">Futebol</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="futa" id="ifuta">
+                        <label for="ifuta">Futebol Americano</label>
+                    </div>
+
+                    <div> 
+                        <input type="checkbox" name="f1" id="if1">
+                        <label for="if1">Fórmula1</label>
+                    </div>
+
+                  <div>
+                    <input type="checkbox" name="bas" id="ibas">
+                    <label for="ibas">Basquete</label>
+                  </div>
+    </fieldset>
+              
+               <div id="op">
+                   <input type="submit" value="Enviar">
+                    <input type="reset" value="Apagar">
+               </div>
+    </form>
+    
+</body>
+</html>
