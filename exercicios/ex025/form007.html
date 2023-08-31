@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario007</title>
+    <style>
+        div{
+            padding-bottom: 8px;
+        }
+        .pointer{
+            cursor: pointer;
+          }
+
+          textarea{
+            display: block;
+          }
+
+    </style>
+</head>
+<body>
+    <h1>Testando formulario</h1>
+    <form action="cadastro.php"  method="post" autocomplete="on">
+          <div>
+            <label for="iestados">Estado:</label>
+              <select name="estados" id="iestados" class="pointer">
+                  <optgroup label="Sul">
+                      <option value="RS">Rio Grande do Sul</option>
+                      <option value="SC" selected>Santa Catarina </option>
+                      <option value="PR">Paraná</option>
+                  </optgroup>
+
+                  <optgroup label="Sudeste">
+                     <option value="Sp">São Paulo</option>
+                     <option value="MG">Minas Gerais</option>
+                     <option value="ES">Espirito Santo</option>
+                  </optgroup>
+              </select>
+          </div>
+           
+          <div>
+            <label for="iprof">Profissões:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+             <datalist id="lstprof">
+               <option>Policial</option>
+               <option>Serviços Gerais</option>
+               <option>Administrador</option>
+               <option>Desenvolvedor</option>
+             </datalist>
+          </div>
+
+          <div>
+            <label for="imsg">Mensagem:</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+          </div>
+
+          <div>
+            <input type="submit" value="Enviar" class="pointer">
+            <input type="reset" value="Apagar" class="pointer">
+          </div>
+    </form>
+    
+</body>
+</html>
