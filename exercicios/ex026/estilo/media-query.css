@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/*320px — 480px: dispositivos móveis. 
+481px — 768px: iPads, tablets. 769px — 1024px: telas pequenas, 
+laptops. 1025px — 1200px: desktops, telas grandes.*/
+
+@media screen and (min-width:768px) {
+
+
+   header > i#burguer{
+         display: none;
+    }
+
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul > li > a{
+        margin-left: 5px ;
+        border-radius: 3px;
+    }
+
+    main{
+        width: 500px;
+    }
+}
